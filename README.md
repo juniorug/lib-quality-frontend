@@ -1,6 +1,6 @@
-# CraftbeerFrontend
+# LibQualityFrontend
 
-Front-end for the project [craftbeer](https://github.com/juniorug/craftbeer) to register craft beers
+Front-end for the project [lib-quality](https://github.com/juniorug/lib-quality): An application that collects data from GitHub, consolidate, and make them available through a REST api.
 
 ## Development server
 
