@@ -1,31 +1,29 @@
 <div class="panel panel-primary">
     <div class="panel-heading">
-      <h2>Craft Beer List</h2>
+      <h2>Project List</h2>
     </div>
     <div class="panel-body">
       <table class="table table-striped">
         <thead>
           <tr>
-            <!--<th>ID</th>-->
-            <th>Name</th>
-            <th>Category Name</th>
-            <th>Brewery Name</th>
-            <th>ABV</th>
-            <th>IBU</th>
+            <th>Project Name</th>
+            <th>Company Name</th>
+            <th>Full Name</th>
+            <th>Issues Opened</th>
+            <th>AVG Issues opened</th>
+            <th># Of Visitors</th>
             <th>Actions</th>
           </tr>
         </thead>
         <tbody>
           <tr *ngFor="let craftBeer of craftBeers | async">
-            <!-- <td>{{craftBeers.id}}</td> -->
-            <td>{{craftBeer.name}}</td>
-            <td>{{craftBeer.emailId}}</td>
-            <td>{{craftBeer.categoryName}}</td>
-            <td>{{craftBeer.breweryName}}</td>
-            <td>{{craftBeer.abv}}</td>
-            <td>{{craftBeer.ibu}}</td>
-            <td><button (click)="deleteCraftBeer(craftBeer.id)" class="btn btn-danger">Delete</button>
-                <button (click)="craftBeerEdit(craftBeer.id)" class="btn btn-info" style="margin-left: 10px">Edit</button>
+            <td>{{craftBeer.project_name}}</td>
+            <td>{{craftBeer.company_name}}</td>
+            <td>{{craftBeer.full_name}}</td>
+            <td>{{craftBeer.open_issues_count}}</td>
+            <td>{{craftBeer.avg_opened_issues}}</td>
+            <td>{{craftBeer.user_visit}}</td>
+            <td>
                 <button (click)="craftBeerDetails(craftBeer.id)" class="btn btn-info" style="margin-left: 10px">Details</button>
             </td>
           </tr>

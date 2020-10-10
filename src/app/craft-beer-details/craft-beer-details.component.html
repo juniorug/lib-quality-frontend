@@ -1,24 +1,24 @@
-<h2>Craft Beer Details</h2> 
+<h2>Project</h2> 
 
 <hr/>
 <div *ngIf="craftBeer">
   <div>
-    <label><b>Name: </b></label> {{craftBeer.name}}
+    <label><b>Name: </b></label> {{craftBeer.project_name}}
   </div>
   <div>
-    <label><b>Category Name: </b></label> {{craftBeer.categoryName}}
+    <label><b>Company Name: </b></label> {{craftBeer.company_name}}
   </div>
   <div>
-    <label><b>Brewery Name: </b></label> {{craftBeer.breweryName}}
+    <label><b>Opened issues count: </b></label> {{craftBeer.open_issues_count}}
   </div>  
   <div>
-    <label><b>ABV: </b></label> {{craftBeer.abv}}
+    <label><b>Avg Opened Issues: </b></label> {{craftBeer.avg_opened_issues}}
   </div>
   <div>
-    <label><b>IBU: </b></label> {{craftBeer.ibu}}
+    <label><b>#Visitors: </b></label> {{craftBeer.user_visit}}
   </div>
 </div>
 
 <br>
 <br>
-<button (click)="list()" class="btn btn-primary">Back to Craft Beer List</button><br>
+<button (click)="list()" class="btn btn-primary">Back to Project List</button><br>

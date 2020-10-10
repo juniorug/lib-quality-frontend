@@ -1,8 +1,8 @@
 export class CraftBeer {
-    id: number;
-    name: string;
-    categoryName: string;
-    breweryName: string;
-    abv: number;
-    ibu: number;
+    project_name: string;
+    company_name: string;
+    full_name: string;
+    open_issues_count: number;
+    avg_opened_issues: number;
+    user_visit: number;
 }

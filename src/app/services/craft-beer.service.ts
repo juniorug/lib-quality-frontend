@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class CraftBeerService {
 
-  private baseUrl = 'http://localhost:8080/craft-beers';
+  private baseUrl = 'http://localhost:8080/projects';
 
   constructor(private http: HttpClient) { }
 
