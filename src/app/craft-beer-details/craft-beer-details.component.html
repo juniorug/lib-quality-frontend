@@ -1,0 +1,24 @@
+<h2>Craft Beer Details</h2> 
+
+<hr/>
+<div *ngIf="craftBeer">
+  <div>
+    <label><b>Name: </b></label> {{craftBeer.name}}
+  </div>
+  <div>
+    <label><b>Category Name: </b></label> {{craftBeer.categoryName}}
+  </div>
+  <div>
+    <label><b>Brewery Name: </b></label> {{craftBeer.breweryName}}
+  </div>  
+  <div>
+    <label><b>ABV: </b></label> {{craftBeer.abv}}
+  </div>
+  <div>
+    <label><b>IBU: </b></label> {{craftBeer.ibu}}
+  </div>
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to Craft Beer List</button><br>
